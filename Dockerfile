@@ -6,4 +6,5 @@ COPY . .
 RUN npm install
 ENV API_URL=http://www.amit.com
 EXPOSE 3000
-CMD npm start
+#ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "start"]
